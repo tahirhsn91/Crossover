@@ -5,3 +5,17 @@ c:\users\tahirhsn\documents\visual studio 2015\Projects\Crossover\Crossover.Repo
 c:\users\tahirhsn\documents\visual studio 2015\Projects\Crossover\Crossover.Repository\obj\Debug\Crossover.Repository.pdb
 c:\users\tahirhsn\documents\visual studio 2015\Projects\Crossover\Crossover.Repository\bin\Debug\Crossover.Core.dll
 c:\users\tahirhsn\documents\visual studio 2015\Projects\Crossover\Crossover.Repository\bin\Debug\Crossover.Core.pdb
+E:\10Pearls Work\Crossover\Crossover.Repository\bin\Debug\Crossover.Repository.dll
+E:\10Pearls Work\Crossover\Crossover.Repository\bin\Debug\Crossover.Repository.pdb
+E:\10Pearls Work\Crossover\Crossover.Repository\bin\Debug\Crossover.Core.dll
+E:\10Pearls Work\Crossover\Crossover.Repository\bin\Debug\Crossover.Core.pdb
+E:\10Pearls Work\Crossover\Crossover.Repository\obj\Debug\Crossover.Repository.csprojResolveAssemblyReference.cache
+E:\10Pearls Work\Crossover\Crossover.Repository\obj\Debug\Crossover.Repository.dll
+E:\10Pearls Work\Crossover\Crossover.Repository\obj\Debug\Crossover.Repository.pdb
+E:\10Pearls Work\Crossover\Crossover.Repository\bin\Debug\Crossover.Repository.dll.config
+E:\10Pearls Work\Crossover\Crossover.Repository\bin\Debug\EntityFramework.dll
+E:\10Pearls Work\Crossover\Crossover.Repository\bin\Debug\EntityFramework.SqlServer.dll
+E:\10Pearls Work\Crossover\Crossover.Repository\bin\Debug\EntityFramework.xml
+E:\10Pearls Work\Crossover\Crossover.Repository\bin\Debug\EntityFramework.SqlServer.xml
+E:\10Pearls Work\Crossover\Crossover.Repository\bin\Debug\Ninject.dll
+E:\10Pearls Work\Crossover\Crossover.Repository\bin\Debug\Ninject.xml

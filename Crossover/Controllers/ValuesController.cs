@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Crossover.Core.Entity;
+using Crossover.Core.IService;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,10 +11,17 @@ namespace Crossover.Controllers
 {
     public class ValuesController : ApiController
     {
-        // GET api/values
-        public IEnumerable<string> Get()
+        IRegisterService registerService;
+
+        public ValuesController(IRegisterService registerService)
         {
-            return new string[] { "value1", "value2" };
+            this.registerService = registerService;
+        }
+
+        // GET api/values
+        public List<Application> Get()
+        {
+            return this.registerService.GetApplication();
         }
 
         // GET api/values/5

@@ -3,3 +3,10 @@ c:\users\tahirhsn\documents\visual studio 2015\Projects\Crossover\Crossover.Core
 c:\users\tahirhsn\documents\visual studio 2015\Projects\Crossover\Crossover.Core\obj\Debug\Crossover.Core.csprojResolveAssemblyReference.cache
 c:\users\tahirhsn\documents\visual studio 2015\Projects\Crossover\Crossover.Core\obj\Debug\Crossover.Core.dll
 c:\users\tahirhsn\documents\visual studio 2015\Projects\Crossover\Crossover.Core\obj\Debug\Crossover.Core.pdb
+E:\10Pearls Work\Crossover\Crossover.Core\bin\Debug\Crossover.Core.dll
+E:\10Pearls Work\Crossover\Crossover.Core\bin\Debug\Crossover.Core.pdb
+E:\10Pearls Work\Crossover\Crossover.Core\obj\Debug\Crossover.Core.csprojResolveAssemblyReference.cache
+E:\10Pearls Work\Crossover\Crossover.Core\obj\Debug\Crossover.Core.dll
+E:\10Pearls Work\Crossover\Crossover.Core\obj\Debug\Crossover.Core.pdb
+E:\10Pearls Work\Crossover\Crossover.Core\bin\Debug\Ninject.dll
+E:\10Pearls Work\Crossover\Crossover.Core\bin\Debug\Ninject.xml
