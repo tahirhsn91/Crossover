@@ -1,0 +1,9 @@
+c:\users\tahirhsn\documents\visual studio 2015\Projects\Crossover\Crossover.Service\bin\Debug\Crossover.Service.dll
+c:\users\tahirhsn\documents\visual studio 2015\Projects\Crossover\Crossover.Service\bin\Debug\Crossover.Service.pdb
+c:\users\tahirhsn\documents\visual studio 2015\Projects\Crossover\Crossover.Service\obj\Debug\Crossover.Service.csprojResolveAssemblyReference.cache
+c:\users\tahirhsn\documents\visual studio 2015\Projects\Crossover\Crossover.Service\obj\Debug\Crossover.Service.dll
+c:\users\tahirhsn\documents\visual studio 2015\Projects\Crossover\Crossover.Service\obj\Debug\Crossover.Service.pdb
+c:\users\tahirhsn\documents\visual studio 2015\Projects\Crossover\Crossover.Service\bin\Debug\Crossover.Core.dll
+c:\users\tahirhsn\documents\visual studio 2015\Projects\Crossover\Crossover.Service\bin\Debug\Crossover.Repository.dll
+c:\users\tahirhsn\documents\visual studio 2015\Projects\Crossover\Crossover.Service\bin\Debug\Crossover.Core.pdb
+c:\users\tahirhsn\documents\visual studio 2015\Projects\Crossover\Crossover.Service\bin\Debug\Crossover.Repository.pdb
