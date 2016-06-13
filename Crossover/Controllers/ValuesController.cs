@@ -1,4 +1,5 @@
-﻿using Crossover.Core.Entity;
+﻿using Caprelo.Core;
+using Crossover.Core.Entity;
 using Crossover.Core.IService;
 using System;
 using System.Collections.Generic;
@@ -13,15 +14,16 @@ namespace Crossover.Controllers
     {
         IRegisterService registerService;
 
-        public ValuesController(IRegisterService registerService)
+        public ValuesController()
         {
-            this.registerService = registerService;
+            this.registerService = IoC.Resolve<IRegisterService>("RegisterService");
         }
 
         // GET api/values
         public List<Application> Get()
         {
-            return this.registerService.GetApplication();
+            return new List<Application>();
+            //return this.registerService.GetApplication();
         }
 
         // GET api/values/5

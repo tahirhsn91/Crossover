@@ -18,5 +18,12 @@ E:\10Pearls Work\Crossover\Crossover.Service\obj\Debug\Crossover.Service.dll
 E:\10Pearls Work\Crossover\Crossover.Service\obj\Debug\Crossover.Service.pdb
 E:\10Pearls Work\Crossover\Crossover.Service\bin\Debug\EntityFramework.dll
 E:\10Pearls Work\Crossover\Crossover.Service\bin\Debug\EntityFramework.xml
-E:\10Pearls Work\Crossover\Crossover.Service\bin\Debug\Ninject.dll
-E:\10Pearls Work\Crossover\Crossover.Service\bin\Debug\Ninject.xml
+E:\10Pearls Work\Crossover\Crossover.Service\bin\Debug\Common.Logging.Core.dll
+E:\10Pearls Work\Crossover\Crossover.Service\bin\Debug\Common.Logging.dll
+E:\10Pearls Work\Crossover\Crossover.Service\bin\Debug\Spring.Core.dll
+E:\10Pearls Work\Crossover\Crossover.Service\bin\Debug\Common.Logging.pdb
+E:\10Pearls Work\Crossover\Crossover.Service\bin\Debug\Common.Logging.xml
+E:\10Pearls Work\Crossover\Crossover.Service\bin\Debug\Common.Logging.Core.pdb
+E:\10Pearls Work\Crossover\Crossover.Service\bin\Debug\Common.Logging.Core.xml
+E:\10Pearls Work\Crossover\Crossover.Service\bin\Debug\Spring.Core.pdb
+E:\10Pearls Work\Crossover\Crossover.Service\bin\Debug\Spring.Core.xml

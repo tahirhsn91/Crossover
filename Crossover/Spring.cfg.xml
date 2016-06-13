@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+  <description>Crossover</description>
+
+  <object name="ApplicationRepository" type="Crossover.Repository.ApplicationRepository , Crossover.Repository"></object>
+  <object name="LogRepository" type="Crossover.Repository.LogRepository , Crossover.Repository"></object>
+
+  <object name="RegisterService" type="Crossover.Service.RegisterService , Crossover.Service">
+    <constructor-arg name="applicationRepository" ref="ApplicationRepository"/>
+  </object>
+  <object name="AuthService" type="Crossover.Service.AuthService , Crossover.Service">
+    <constructor-arg name="applicationRepository" ref="ApplicationRepository"/>
+  </object>
+  <object name="LogService" type="Crossover.Service.LogService , Crossover.Service">
+    <constructor-arg name="logRepository" ref="LogRepository"/>
+  </object>
+  
+</objects>

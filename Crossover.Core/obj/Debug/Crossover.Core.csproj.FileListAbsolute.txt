@@ -5,8 +5,14 @@ c:\users\tahirhsn\documents\visual studio 2015\Projects\Crossover\Crossover.Core
 c:\users\tahirhsn\documents\visual studio 2015\Projects\Crossover\Crossover.Core\obj\Debug\Crossover.Core.pdb
 E:\10Pearls Work\Crossover\Crossover.Core\bin\Debug\Crossover.Core.dll
 E:\10Pearls Work\Crossover\Crossover.Core\bin\Debug\Crossover.Core.pdb
-E:\10Pearls Work\Crossover\Crossover.Core\obj\Debug\Crossover.Core.csprojResolveAssemblyReference.cache
 E:\10Pearls Work\Crossover\Crossover.Core\obj\Debug\Crossover.Core.dll
 E:\10Pearls Work\Crossover\Crossover.Core\obj\Debug\Crossover.Core.pdb
-E:\10Pearls Work\Crossover\Crossover.Core\bin\Debug\Ninject.dll
-E:\10Pearls Work\Crossover\Crossover.Core\bin\Debug\Ninject.xml
+E:\10Pearls Work\Crossover\Crossover.Core\bin\Debug\Common.Logging.Core.dll
+E:\10Pearls Work\Crossover\Crossover.Core\bin\Debug\Common.Logging.dll
+E:\10Pearls Work\Crossover\Crossover.Core\bin\Debug\Spring.Core.dll
+E:\10Pearls Work\Crossover\Crossover.Core\bin\Debug\Common.Logging.pdb
+E:\10Pearls Work\Crossover\Crossover.Core\bin\Debug\Common.Logging.xml
+E:\10Pearls Work\Crossover\Crossover.Core\bin\Debug\Common.Logging.Core.pdb
+E:\10Pearls Work\Crossover\Crossover.Core\bin\Debug\Common.Logging.Core.xml
+E:\10Pearls Work\Crossover\Crossover.Core\bin\Debug\Spring.Core.pdb
+E:\10Pearls Work\Crossover\Crossover.Core\bin\Debug\Spring.Core.xml

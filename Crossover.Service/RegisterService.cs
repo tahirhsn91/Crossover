@@ -18,10 +18,5 @@ namespace Crossover.Service
         {
             this.applicationRepository.SaveApplication(entity);
         }
-
-        public List<Application> GetApplication()
-        {
-            return this.applicationRepository.GetApplication();
-        }
     }
 }

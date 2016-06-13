@@ -2,5 +2,6 @@
 {
     public interface IAuthService
     {
+        string GetAuthToken(string applicationId);
     }
 }

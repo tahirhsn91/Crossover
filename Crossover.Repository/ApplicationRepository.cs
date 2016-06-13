@@ -52,30 +52,30 @@ namespace Crossover.Repository
         #region Private Functions
         private Application ConvertDBModelToDTOEntity(application item)
         {
-            Application app = new Application();
+            Application obj = new Application();
 
             if (item != null)
             {
-                app.ApplicationId = item.application_id;
-                app.DisplayName = item.display_name;
-                app.Secret = item.secret;
+                obj.ApplicationId = item.application_id;
+                obj.DisplayName = item.display_name;
+                obj.Secret = item.secret;
             }
 
-            return app;
+            return obj;
         }
 
         private application ConvertDTOEntityToDBModel(Application item)
         {
-            application app = new application();
+            application obj = new application();
 
             if (item != null)
             {
-                app.application_id = item.ApplicationId;
-                app.display_name = item.DisplayName;
-                app.secret = item.Secret;
+                obj.application_id = item.ApplicationId;
+                obj.display_name = item.DisplayName;
+                obj.secret = item.Secret;
             }
 
-            return app;
+            return obj;
         }
         #endregion
     }
