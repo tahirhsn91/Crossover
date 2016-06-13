@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CrossoverModelStoreContainer" CdmEntityContainer="CrossoverEntities">
+    <EntitySetMapping Name="applications">
+      <EntityTypeMapping TypeName="CrossoverModel.application">
+        <MappingFragment StoreEntitySet="application">
+          <ScalarProperty Name="application_id" ColumnName="application_id" />
+          <ScalarProperty Name="display_name" ColumnName="display_name" />
+          <ScalarProperty Name="secret" ColumnName="secret" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="logs">
+      <EntityTypeMapping TypeName="CrossoverModel.log">
+        <MappingFragment StoreEntitySet="log">
+          <ScalarProperty Name="log_id" ColumnName="log_id" />
+          <ScalarProperty Name="logger" ColumnName="logger" />
+          <ScalarProperty Name="level" ColumnName="level" />
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="application_id" ColumnName="application_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

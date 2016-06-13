@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CrossoverModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="application">
+    <Key>
+      <PropertyRef Name="application_id" />
+    </Key>
+    <Property Name="application_id" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="display_name" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="secret" Type="varchar" MaxLength="25" Nullable="false" />
+  </EntityType>
+  <EntityType Name="log">
+    <Key>
+      <PropertyRef Name="log_id" />
+    </Key>
+    <Property Name="log_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="logger" Type="varchar" MaxLength="256" Nullable="false" />
+    <Property Name="level" Type="varchar" MaxLength="256" Nullable="false" />
+    <Property Name="message" Type="varchar" MaxLength="2048" Nullable="false" />
+    <Property Name="application_id" Type="varchar" MaxLength="32" />
+  </EntityType>
+  <Association Name="FK__log__application__0519C6AF">
+    <End Role="application" Type="Self.application" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="log" Type="Self.log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="application">
+        <PropertyRef Name="application_id" />
+      </Principal>
+      <Dependent Role="log">
+        <PropertyRef Name="application_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CrossoverModelStoreContainer">
+    <EntitySet Name="application" EntityType="Self.application" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="log" EntityType="Self.log" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__log__application__0519C6AF" Association="Self.FK__log__application__0519C6AF">
+      <End Role="application" EntitySet="application" />
+      <End Role="log" EntitySet="log" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

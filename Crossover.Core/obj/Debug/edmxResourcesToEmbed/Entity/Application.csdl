@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CrossoverModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="application">
+    <Key>
+      <PropertyRef Name="application_id" />
+    </Key>
+    <Property Name="application_id" Type="String" MaxLength="32" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="display_name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="secret" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="logs" Relationship="Self.FK__log__application__0519C6AF" FromRole="application" ToRole="log" />
+  </EntityType>
+  <EntityType Name="log">
+    <Key>
+      <PropertyRef Name="log_id" />
+    </Key>
+    <Property Name="log_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="logger" Type="String" MaxLength="256" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="level" Type="String" MaxLength="256" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="message" Type="String" MaxLength="2048" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="application_id" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="application" Relationship="Self.FK__log__application__0519C6AF" FromRole="log" ToRole="application" />
+  </EntityType>
+  <Association Name="FK__log__application__0519C6AF">
+    <End Role="application" Type="Self.application" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="log" Type="Self.log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="application">
+        <PropertyRef Name="application_id" />
+      </Principal>
+      <Dependent Role="log">
+        <PropertyRef Name="application_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CrossoverEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="applications" EntityType="Self.application" />
+    <EntitySet Name="logs" EntityType="Self.log" />
+    <AssociationSet Name="FK__log__application__0519C6AF" Association="Self.FK__log__application__0519C6AF">
+      <End Role="application" EntitySet="applications" />
+      <End Role="log" EntitySet="logs" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
