@@ -2,6 +2,7 @@
 using System.Linq;
 using Crossover.Core.Entity;
 using Crossover.Core.IRepository;
+using System;
 
 namespace Crossover.Repository
 {
@@ -40,10 +41,11 @@ namespace Crossover.Repository
                 using (var db = new CrossoverEntities())
                 {
                     db.applications.Add(ConvertDTOEntityToDBModel(entity));
+                    db.SaveChanges();
                 }
                 return true;
             }
-            catch
+            catch (Exception ex)
             {
                 return false;
             }

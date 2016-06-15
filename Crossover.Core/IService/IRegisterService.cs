@@ -5,6 +5,6 @@ namespace Crossover.Core.IService
 {
     public interface IRegisterService
     {
-        void Register(Application entity);
+        Application Register(Application entity);
     }
 }

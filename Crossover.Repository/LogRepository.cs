@@ -13,6 +13,7 @@ namespace Crossover.Repository
                 using (var db = new CrossoverEntities())
                 {
                     db.logs.Add(ConvertDTOEntityToDBModel(entity));
+                    db.SaveChanges();
                 }
                 return true;
             }

@@ -1,6 +1,7 @@
 ﻿using Crossover.Core.Entity;
 using Crossover.Core.IRepository;
 using Crossover.Core.IService;
+using System;
 using System.Collections.Generic;
 
 namespace Crossover.Service
@@ -14,9 +15,19 @@ namespace Crossover.Service
             this.applicationRepository = applicationRepository;
         }
 
-        public void Register(Application entity)
+        public Application Register(Application entity)
         {
+            entity.ApplicationId = Guid.NewGuid().ToString().Replace("-", "");
+            if (entity.ApplicationId.Length > 25)
+            {
+                entity.ApplicationId = entity.ApplicationId.Substring(0, 24);
+            }
+
+            entity.Secret = entity.ApplicationId;
+
             this.applicationRepository.SaveApplication(entity);
+
+            return entity;
         }
     }
 }

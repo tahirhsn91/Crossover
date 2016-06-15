@@ -1,4 +1,5 @@
-﻿using Crossover.Core.IRepository;
+﻿using Crossover.Core.Entity;
+using Crossover.Core.IRepository;
 using Crossover.Core.IService;
 
 namespace Crossover.Service
@@ -12,9 +13,9 @@ namespace Crossover.Service
             this.applicationRepository = applicationRepository;
         }
 
-        public string GetAuthToken(string applicationId)
+        public Application GetApplication(string applicationId)
         {
-            return null;
+            return this.applicationRepository.GetApplication(applicationId);
         }
     }
 }

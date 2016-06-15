@@ -16,3 +16,4 @@ E:\10Pearls Work\Crossover\Crossover.Core\bin\Debug\Common.Logging.Core.pdb
 E:\10Pearls Work\Crossover\Crossover.Core\bin\Debug\Common.Logging.Core.xml
 E:\10Pearls Work\Crossover\Crossover.Core\bin\Debug\Spring.Core.pdb
 E:\10Pearls Work\Crossover\Crossover.Core\bin\Debug\Spring.Core.xml
+E:\10Pearls Work\Crossover\Crossover.Core\obj\Debug\Crossover.Core.csprojResolveAssemblyReference.cache

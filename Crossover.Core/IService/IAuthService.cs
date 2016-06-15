@@ -1,7 +1,9 @@
-﻿namespace Crossover.Core.IService
+﻿using Crossover.Core.Entity;
+
+namespace Crossover.Core.IService
 {
     public interface IAuthService
     {
-        string GetAuthToken(string applicationId);
+        Application GetApplication(string applicationId);
     }
 }
