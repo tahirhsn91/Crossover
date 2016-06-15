@@ -1,4 +1,5 @@
 ﻿using Caprelo.Core;
+using Crossover.API.Attribute;
 using Crossover.Core.Entity;
 using Crossover.Core.IService;
 using System;
@@ -19,8 +20,14 @@ namespace Crossover.API.Controllers
         }
 
         [Authorize]
+        [Throttle]
         public object Post(Log entity)
         {
+            if (entity == null)
+            {
+
+            }
+
             bool result = this.logService.SaveLog(entity);
 
             return new
