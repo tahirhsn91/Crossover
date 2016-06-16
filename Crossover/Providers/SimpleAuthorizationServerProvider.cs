@@ -1,5 +1,5 @@
-﻿using Caprelo.Core;
-using Crossover.Core.Entity;
+﻿using Crossover.Core.Entity;
+using Crossover.Core.Helpers;
 using Crossover.Core.IService;
 using Microsoft.Owin.Security.OAuth;
 using System;
@@ -41,10 +41,9 @@ namespace Crossover.API.Providers
             Application application = authService.GetApplication(applicationId);
             if (application == null)
             {
-                HttpResponseMessage msg = new HttpResponseMessage(System.Net.HttpStatusCode.Unauthorized);
-                msg.ReasonPhrase = "invalid credentials";
+                string message = "invalid credentials";
 
-                throw new HttpResponseException(msg);
+                ExceptionHelper.ThrowAPIException(System.Net.HttpStatusCode.Unauthorized, message, message);
             }
 
             var identity = new ClaimsIdentity(context.Options.AuthenticationType);

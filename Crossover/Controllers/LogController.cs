@@ -1,6 +1,6 @@
-﻿using Caprelo.Core;
-using Crossover.API.Attribute;
+﻿using Crossover.API.Attribute;
 using Crossover.Core.Entity;
+using Crossover.Core.Helpers;
 using Crossover.Core.IService;
 using System;
 using System.Collections.Generic;
@@ -25,7 +25,8 @@ namespace Crossover.API.Controllers
         {
             if (entity == null)
             {
-
+                string message = "invalid JSON";
+                ExceptionHelper.ThrowAPIException(HttpStatusCode.BadRequest, message, message);
             }
 
             bool result = this.logService.SaveLog(entity);

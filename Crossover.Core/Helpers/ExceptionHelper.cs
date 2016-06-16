@@ -2,8 +2,9 @@
 using System.Net;
 using System.Net.Http;
 using System.Web;
+using System.Web.Http;
 
-namespace Caprelo.Common.Helper
+namespace Crossover.Core.Helpers
 {
     public class ExceptionHelper
     {
@@ -25,11 +26,6 @@ namespace Caprelo.Common.Helper
             resp.ReasonPhrase = reasonPhrase;
 
             return new HttpResponseException(resp);
-        }
-
-        public static void LogAPIException(Exception ex)
-        {
-            Elmah.ErrorLog.GetDefault(HttpContext.Current).Log(new Elmah.Error(ex));
         }
     }
 }

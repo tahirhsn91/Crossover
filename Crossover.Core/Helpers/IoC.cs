@@ -4,7 +4,7 @@ using System.IO;
 using Spring.Context;
 using Spring.Context.Support;
 
-namespace Caprelo.Core
+namespace Crossover.Core.Helpers
 {
     public static class IoC
     {

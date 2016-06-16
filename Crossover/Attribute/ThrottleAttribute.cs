@@ -55,10 +55,9 @@ namespace Crossover.API.Attribute
 
             if (!allowExecute)
             {
-                string Message = string.Empty;
-                Message = "Exceeding the rate limiting.";
+                string Message = "Exceeding the rate limiting.";
 
-                actionContext.Response = actionContext.Request.CreateResponse(HttpStatusCode.Forbidden, Message);
+                Core.Helpers.ExceptionHelper.ThrowAPIException(HttpStatusCode.Forbidden, Message, Message);
             }
         }
     }

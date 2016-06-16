@@ -25,3 +25,7 @@ E:\10Pearls Work\Crossover\Crossover.Repository\bin\Debug\Common.Logging.Core.pd
 E:\10Pearls Work\Crossover\Crossover.Repository\bin\Debug\Common.Logging.Core.xml
 E:\10Pearls Work\Crossover\Crossover.Repository\bin\Debug\Spring.Core.pdb
 E:\10Pearls Work\Crossover\Crossover.Repository\bin\Debug\Spring.Core.xml
+E:\10Pearls Work\Crossover\Crossover.Repository\bin\Debug\System.Web.Http.dll
+E:\10Pearls Work\Crossover\Crossover.Repository\bin\Debug\System.Net.Http.Formatting.dll
+E:\10Pearls Work\Crossover\Crossover.Repository\bin\Debug\System.Web.Http.xml
+E:\10Pearls Work\Crossover\Crossover.Repository\bin\Debug\System.Net.Http.Formatting.xml
