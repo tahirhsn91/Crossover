@@ -31,6 +31,10 @@ namespace Crossover.API.Providers
             {
                 applicationId = context.Request.Headers["applicationId"];
             }
+            else if (context.Request.Headers.Keys.Contains("applicationId"))
+            {
+                applicationId = context.Request.Headers["applicationId"];
+            }
 
             if (context.Request.Headers.Keys.Contains("applicationSecret"))
             {
