@@ -1,5 +1,5 @@
-﻿using Caprelo.Core;
-using Crossover.Core.Entity;
+﻿using Crossover.Core.Entity;
+using Crossover.Core.Helpers;
 using Crossover.Core.IService;
 using System;
 using System.Collections.Generic;
@@ -22,6 +22,12 @@ namespace Crossover.API.Controllers
         [AllowAnonymous]
         public Application Post(Application value)
         {
+            if (value == null)
+            {
+                string message = "invalid JSON";
+                ExceptionHelper.ThrowAPIException(HttpStatusCode.BadRequest, message, message);
+            }
+
             return this.registerService.Register(value);
         }
     }
